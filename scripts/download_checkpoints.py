@@ -17,7 +17,7 @@ def main():
     snapshot_download(args.repo_id, revision=args.revision, local_dir=args.output_root,
                       allow_patterns=["lidarverse-tokenizer-pai/*", "lidarverse-bidir-pai/*",
                                       "lidarverse-causal-pai/*", "lidarverse-sfdmd-pai/*",
-                                      "pai_manifest.json", "README.md", "LICENSE*"])
+                                      "config.json", "pai_manifest.json", "README.md", "LICENSE*"])
     for package, files in {"tokenizer": ("ckpt.pt", "latent_stats.pt", "config.json"),
                            "bidir": ("ema_model.pt", "config.json"),
                            "causal": ("ema_model.pt", "config.json"),
